@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backet {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/1521480944589.jfif);
+}
+
+.backet .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    box-shadow: 0 0 10px #777;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+}
+
+.backet .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.backet .container form .formItems {
+    height: 40px;
+}
+
+.backet .container form .formItems label {
+    position: absolute;
+    margin-top: 5px;
+    vertical-align: bottom;
+}
+
+.backet .container form .formItems label span {
+    color: red;
+}
+
+.backet .container form .formItems input {
+    width: 70%;
+    position: absolute;
+    right: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 3px #ccc;
+}
+
+.backet .container form .formItems input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid green;
+}
+
+.backet .container form .btn input {
+    margin-top: 10px;
+    box-shadow: none;
+    border: 1px solid green;
+    background: rgb(250, 255, 250);
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .5s;
+    width: 30%;
+}
+
+.backet .container form .btn input:hover {
+    border: none;
+    background: green;
+    color: white;
+}
+
+/* ID Card page started */
+
+.idShape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3.125in;
+    width: 4.9632352941176in;
+    box-shadow: 0 0 10px #777;
+    /* padding: 30px 30px 70px 30px; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./images/id_bg-01.jpg);
+    background-size: cover;
+}
+
+.idShape .logo {
+    height: 70px;
+    width: 300px;
+    background: url(./images/mu_logo.png);
+    background-size: cover;
+    background-position-y: center;
+    margin: 20px auto 0;
+}
+
+.idShape .title {
+    width: fit-content;
+    padding: 2px;
+    border: 1px solid black;
+    margin: 5px auto;
+    font-weight: 700;
+}
+
+.idShape .box {
+    display: flex;
+}
+
+.idShape .box .pic img {
+    width: 120px;
+    height: 135px;
+    margin: 5px 10px 10px 20px;
+    border: 1px solid black;
+}
+
+.idShape .box table {
+    margin: 5px 20px 20px 0;
+}
+
+.idShape .box table td {
+    padding: 5px 0;
+    font-weight: 550;
+}
+
+.color {
+    display: flex;
+}
+.color .grayC {
+    height: 15px;
+    width: 25%;
+    background: gray;
+    border-radius: 0 0 0 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.color .redC {
+    height: 15px;
+    width: 25%;
+    background: red;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+}
+.color .blueC {
+    height: 15px;
+    width: 50%;
+    background: navy;
+    border-radius: 0 0 10px 0;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+}
+
+@media(max-width: 968px) {
+    .backet .container {
+        width: 70%;
+    }
+}
+@media(max-width: 768px) {
+    .backet .container {
+        width: 80%;
+    }
+    .backet .container form .formItems input {
+        width: 55%;
+    }
+}
+@media(max-width: 500px) {
+    .backet .container {
+        width: 90%;
+    }
+}
