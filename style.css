@@ -126,6 +126,10 @@
     margin: 5px 20px 20px 0;
 }
 
+.idShape .box table tr td h2 {
+    font-size: 22px;
+}
+
 .idShape .box table td {
     padding: 5px 0;
     font-weight: 550;
