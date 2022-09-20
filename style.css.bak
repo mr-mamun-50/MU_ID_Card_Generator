@@ -8,12 +8,7 @@
 .backet {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.7)
-        ),
-        url(./images/1521480944589.jfif);
-    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(./images/1521480944589.jfif);
 }
 
 .backet .container {
@@ -25,10 +20,7 @@
     box-shadow: 0 0 10px #777;
     padding: 30px;
     border-radius: 5px;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.8)
-    );
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
 }
 
 .backet .container h1 {
@@ -75,7 +67,7 @@
     color: green;
     font-weight: bold;
     font-size: 16px;
-    transition: 0.5s;
+    transition: .5s;
     width: 30%;
 }
 
@@ -98,11 +90,7 @@
     /* padding: 30px 30px 70px 30px; */
     /* padding: 20px; */
     border-radius: 10px;
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.6),
-            rgba(255, 255, 255, 0.6)
-        ),
-        url(./images/id_bg-01.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./images/id_bg-01.jpg);
     background-size: cover;
 }
 
@@ -177,12 +165,12 @@
     bottom: 0;
 }
 
-@media (max-width: 968px) {
+@media(max-width: 968px) {
     .backet .container {
         width: 70%;
     }
 }
-@media (max-width: 768px) {
+@media(max-width: 768px) {
     .backet .container {
         width: 80%;
     }
@@ -190,7 +178,7 @@
         width: 55%;
     }
 }
-@media (max-width: 500px) {
+@media(max-width: 500px) {
     .backet .container {
         width: 90%;
     }

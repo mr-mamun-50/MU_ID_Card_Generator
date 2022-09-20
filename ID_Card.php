@@ -24,13 +24,34 @@
     <title>ID Card</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        function shot() {
+
+            domtoimage.toJpeg(document.querySelector('.htmlContent'), {
+                    quality: 1.00
+                })
+                .then(function(dataUrl) {
+                    var link = document.createElement('a');
+                    link.download = "<?php if(isset($name)) {
+                                    echo $name;
+                                } ?>_MU_SID.jpeg";
+                    link.href = dataUrl;
+                    link.click();
+                });
+        }
+    </script>
 </head>
 
 <body>
 
     <section class="backet">
 
-        <div class="idShape">
+        <div class="idShape htmlContent">
 
             <div class="logo">
                 <!-- <img src="./images/mu_logo.png" alt="MU Logo"> -->
@@ -89,6 +110,11 @@
             </div>
 
         </div>
+
+
+        <!-- <div class="dbutton">
+            <button onclick="shot()" class="btn btn-success"><i class="bi bi-download"></i> Download</button>
+        </div> -->
     </section>
 
 </body>
